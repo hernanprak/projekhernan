@@ -5,9 +5,8 @@ import { ApiService } from 'src/app/services/api.service';
 @Component({
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css']
+  styleUrls: ['./product-detail.component.scss']
 })
-
 export class ProductDetailComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<ProductDetailComponent>,
@@ -24,7 +23,7 @@ export class ProductDetailComponent implements OnInit {
     this.loading=true;
     if(this.data.id == undefined)
     {
-      this.api.post('bookswithauth',this.data).subscribe((result: any)=>{
+      this.api.post('bookswithauth',this.data).subscribe(result=>{
         this.dialogRef.close(result);
         this.loading=false;
       },error=>{
