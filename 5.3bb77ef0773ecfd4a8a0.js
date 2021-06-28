@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{UFnY:function(n,o,t){"use strict";t.r(o),t.d(o,"PublicModule",function(){return r});var c=t("ofXK"),e=t("fXoL");let r=(()=>{class n{}return n.\u0275fac=function(o){return new(o||n)},n.\u0275mod=e.Mb({type:n}),n.\u0275inj=e.Lb({imports:[[c.c]]}),n})()}}]);
